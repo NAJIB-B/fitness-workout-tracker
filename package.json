@@ -1,0 +1,27 @@
+{
+  "name": "fitness-workout-tracker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --exec node --no-warnings=ExperimentalWarning --loader ts-node/esm src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad Najib Bala",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "joi": "^17.13.3",
+    "mongodb": "^6.10.0",
+    "mongoose": "^8.7.2",
+    "ts-node-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
