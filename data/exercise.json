@@ -1,0 +1,244 @@
+[
+    {
+        "name": "Push-Up",
+        "category": "strength",
+        "muscleGroup": "chest",
+        "duration": 15,
+        "description": "A basic push-up exercise to strengthen the chest and triceps.",
+        "user": null
+    },
+    {
+        "name": "Squat",
+        "category": "strength",
+        "muscleGroup": "legs",
+        "duration": 20,
+        "description": "A bodyweight squat to work the thighs and glutes.",
+        "user": null
+    },
+    {
+        "name": "Burpees",
+        "category": "hiit",
+        "muscleGroup": "full-body",
+        "duration": 10,
+        "description": "A high-intensity exercise combining squats, push-ups, and jumps.",
+        "user": null
+    },
+    {
+        "name": "Plank",
+        "category": "strength",
+        "muscleGroup": "core",
+        "duration": 5,
+        "description": "A core-strengthening exercise that stabilizes the body.",
+        "user": null
+    },
+    {
+        "name": "Lunges",
+        "category": "strength",
+        "muscleGroup": "legs",
+        "duration": 15,
+        "description": "A lower-body exercise targeting the thighs and glutes.",
+        "user": null
+    },
+    {
+        "name": "Jump Rope",
+        "category": "cardio",
+        "muscleGroup": "full-body",
+        "duration": 10,
+        "description": "A cardio workout that improves agility and endurance.",
+        "user": null
+    },
+    {
+        "name": "Bicep Curl",
+        "category": "strength",
+        "muscleGroup": "arms",
+        "duration": 10,
+        "description": "A weight training exercise that targets the biceps.",
+        "user": null
+    },
+    {
+        "name": "Deadlift",
+        "category": "strength",
+        "muscleGroup": "back",
+        "duration": 25,
+        "description": "A compound exercise that works multiple muscle groups.",
+        "user": null
+    },
+    {
+        "name": "Shoulder Press",
+        "category": "strength",
+        "muscleGroup": "shoulders",
+        "duration": 15,
+        "description": "An exercise that strengthens the shoulders and arms.",
+        "user": null
+    },
+    {
+        "name": "Yoga Sun Salutation",
+        "category": "yoga",
+        "muscleGroup": "full-body",
+        "duration": 20,
+        "description": "A sequence of yoga poses that stretches and strengthens the body.",
+        "user": null
+    },
+    {
+        "name": "Leg Raises",
+        "category": "strength",
+        "muscleGroup": "core",
+        "duration": 10,
+        "description": "An exercise targeting the lower abdominal muscles.",
+        "user": null
+    },
+    {
+        "name": "Tricep Dips",
+        "category": "strength",
+        "muscleGroup": "arms",
+        "duration": 10,
+        "description": "A bodyweight exercise to strengthen the triceps.",
+        "user": null
+    },
+    {
+        "name": "Mountain Climbers",
+        "category": "hiit",
+        "muscleGroup": "full-body",
+        "duration": 15,
+        "description": "A high-intensity exercise that engages the core and legs.",
+        "user": null
+    },
+    {
+        "name": "Side Plank",
+        "category": "strength",
+        "muscleGroup": "core",
+        "duration": 5,
+        "description": "An exercise that targets the obliques and stabilizes the core.",
+        "user": null
+    },
+    {
+        "name": "Bench Press",
+        "category": "strength",
+        "muscleGroup": "chest",
+        "duration": 20,
+        "description": "A weight training exercise that targets the chest, shoulders, and triceps.",
+        "user": null
+    },
+    {
+        "name": "Leg Press",
+        "category": "strength",
+        "muscleGroup": "legs",
+        "duration": 20,
+        "description": "A resistance training exercise that works the quadriceps, hamstrings, and glutes.",
+        "user": null
+    },
+    {
+        "name": "Bent Over Row",
+        "category": "strength",
+        "muscleGroup": "back",
+        "duration": 15,
+        "description": "A weightlifting exercise that targets the back muscles.",
+        "user": null
+    },
+    {
+        "name": "Overhead Dumbbell Press",
+        "category": "strength",
+        "muscleGroup": "shoulders",
+        "duration": 15,
+        "description": "A weight training exercise that strengthens the shoulders and arms.",
+        "user": null
+    },
+    {
+        "name": "Dumbbell Lunges",
+        "category": "strength",
+        "muscleGroup": "legs",
+        "duration": 15,
+        "description": "A lunge exercise performed with dumbbells for added resistance.",
+        "user": null
+    },
+    {
+        "name": "Shoulder Fly",
+        "category": "strength",
+        "muscleGroup": "shoulders",
+        "duration": 15,
+        "description": "An exercise that targets the shoulder muscles using dumbbells.",
+        "user": null
+    },
+    {
+        "name": "Chest Fly",
+        "category": "strength",
+        "muscleGroup": "chest",
+        "duration": 15,
+        "description": "A weight training exercise that targets the chest muscles.",
+        "user": null
+    },
+    {
+        "name": "Cable Row",
+        "category": "strength",
+        "muscleGroup": "back",
+        "duration": 15,
+        "description": "A resistance exercise that targets the back muscles using a cable machine.",
+        "user": null
+    },
+    {
+        "name": "Russian Twists",
+        "category": "strength",
+        "muscleGroup": "core",
+        "duration": 10,
+        "description": "A core exercise that targets the obliques using a weight.",
+        "user": null
+    },
+    {
+        "name": "Lat Pulldown",
+        "category": "strength",
+        "muscleGroup": "back",
+        "duration": 15,
+        "description": "A weight machine exercise that targets the upper back and biceps.",
+        "user": null
+    },
+    {
+        "name": "Leg Extensions",
+        "category": "strength",
+        "muscleGroup": "legs",
+        "duration": 15,
+        "description": "A weight machine exercise that targets the quadriceps.",
+        "user": null
+    },
+    {
+        "name": "Hamstring Curls",
+        "category": "strength",
+        "muscleGroup": "legs",
+        "duration": 15,
+        "description": "A machine exercise that targets the hamstrings.",
+        "user": null
+    },
+    {
+        "name": "Cable Lateral Raises",
+        "category": "strength",
+        "muscleGroup": "shoulders",
+        "duration": 15,
+        "description": "A resistance exercise that targets the shoulder muscles.",
+        "user": null
+    },
+    {
+        "name": "Goblet Squat",
+        "category": "strength",
+        "muscleGroup": "legs",
+        "duration": 15,
+        "description": "A squat performed with a dumbbell or kettlebell held at chest level.",
+        "user": null
+    },
+    {
+        "name": "Seated Dumbbell Press",
+        "category": "strength",
+        "muscleGroup": "shoulders",
+        "duration": 15,
+        "description": "A seated exercise that targets the shoulders using dumbbells.",
+        "user": null
+    },
+    {
+        "name": "Face Pulls",
+        "category": "strength",
+        "muscleGroup": "shoulders",
+        "duration": 15,
+        "description": "A cable exercise that targets the rear deltoids and upper back.",
+        "user": null
+    }
+]
+
+
