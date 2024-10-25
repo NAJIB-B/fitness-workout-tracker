@@ -8,7 +8,11 @@ import {
   deleteAnExercise,
 } from "../controllers/exerciseController.ts";
 
+import {protect} from "../controllers/authContoller.ts"
+
 const router = Router();
+
+router.use(protect)
 
 router.route("/").get(getAllExercise).post(createAnExercise);
 
