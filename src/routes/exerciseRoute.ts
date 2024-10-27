@@ -8,7 +8,7 @@ import {
   deleteAnExercise,
 } from "../controllers/exerciseController.ts";
 
-import {protect} from "../controllers/authContoller.ts"
+import {protect, authorizeExercise} from "../controllers/authContoller.ts"
 
 const router = Router();
 
@@ -18,8 +18,8 @@ router.route("/").get(getAllExercise).post(createAnExercise);
 
 router
   .route("/:exerciseId")
-  .get(getAnExercise)
-  .patch(updateAnExercise)
-  .delete(deleteAnExercise);
+  .get(authorizeExercise, getAnExercise)
+  .patch(authorizeExercise, updateAnExercise)
+  .delete(authorizeExercise, deleteAnExercise);
 
 export default router;

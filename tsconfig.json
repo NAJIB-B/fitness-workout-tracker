@@ -15,7 +15,7 @@
       "*": ["node_modules/*", "src/types/*"] // Custom path mappings
     }
   },
-  "include": ["src/**/*"],            // Include all TypeScript files in the src directory
+  "include": ["src/**/*", "src/@types/**/*"],            // Include all TypeScript files in the src directory
   "exclude": ["node_modules", "**/*.spec.ts"] // Exclude node_modules and test files
 }
 

@@ -6,13 +6,13 @@ import AppError from "../utils/appError.ts";
 
 
 export const getAllExercise = catchAsync(async(req, res, next) => {
-//  const exercises = await Exercise.find({
-//    $or : [
-//      {owner: null},
-//      {owner: req.user._id}
-//    ]
-//  })
-const exercises = await Exercise.find()
+
+  const exercises = await Exercise.find({
+    $or : [
+      {owner: null},
+      {owner: req?.userId}
+    ]
+  })
   res.status(200).json({
     message: 'success',
     result: exercises.length,
