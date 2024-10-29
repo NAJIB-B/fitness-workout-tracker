@@ -1,7 +1,6 @@
 import { Schema, model, Document } from "mongoose";
 import Joi, { required } from "joi";
 
-
 interface IExercise {
   exercise: Schema.Types.ObjectId;
   sets: number;
@@ -17,10 +16,10 @@ const exerciseSchma = Joi.object({
 });
 
 export enum Status {
-    pending = "pending",
+  pending = "pending",
   completed = "completed",
   active = "active",
-  missed = "missed"
+  missed = "missed",
 }
 
 export const schema = Joi.object({
@@ -49,9 +48,9 @@ const workoutSchema = new Schema<IWorkout>(
     },
     exercises: [
       {
-        exercise:{
+        exercise: {
           type: Schema.Types.ObjectId,
-          ref: 'Exercise',
+          ref: "Exercise",
         },
         sets: Number,
         reps: Number,
@@ -71,14 +70,15 @@ const workoutSchema = new Schema<IWorkout>(
     },
     owner: {
       type: Schema.Types.ObjectId,
-      ref: 'User',
+      ref: "User",
       required: [true, "A workout must an owner"],
+      index: 1
     },
     status: {
       type: String,
       enum: Object.values(Status),
-      default: Status.pending
-    }
+      default: Status.pending,
+    },
   },
   { timestamps: true },
 );

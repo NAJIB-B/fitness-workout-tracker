@@ -1,15 +1,29 @@
-import {Router} from "express"
+import { Router } from "express";
 
-import {createWorkout, getAWorkout} from "../controllers/workoutController.ts"
-import { protect, authorizeWorkout } from "../controllers/authContoller.ts"
+import {
+  createWorkout,
+  getAllWorkout,
+  getAWorkout,
+  updateAWorkout,
+  deleteAWorkout,
+  completeAWorkout
+} from "../controllers/workoutController.ts";
 
-const router = Router()
+import { protect, authorizeWorkout } from "../controllers/authContoller.ts";
 
-router.use(protect)
+const router = Router();
 
-router.route("/").get().post(createWorkout)
+router.use(protect);
 
-router.route("/:workoutId").get(authorizeWorkout, getAWorkout)
+router.route("/").get(getAllWorkout).post(createWorkout);
+
+router
+  .route("/:workoutId")
+  .get(authorizeWorkout, getAWorkout)
+  .patch(authorizeWorkout, updateAWorkout)
+  .delete(authorizeWorkout, deleteAWorkout);
 
 
-export default router
+router.post("/completeAWorkout/:workoutId", authorizeWorkout, completeAWorkout)
+
+export default router;

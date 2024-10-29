@@ -3,6 +3,7 @@ import { Request } from "express";
 
 import User, { IUser } from "../models/userModel.ts";
 import Workout from "../models/workoutModel.ts"
+import WorkoutHistory from "../models/workoutHistoryModel.ts";
 import Exercise from "../models/exerciseModel.ts";
 import catchAsync from "../utils/catchAsync.ts";
 import AppError from "../utils/appError.ts";
@@ -91,6 +92,21 @@ export const authorizeWorkout = catchAsync( async(req, res,next) => {
   }
   if (workout.owner.toString() !== req?.userId) {
     return next(new AppError("You are not authorized to access this workout", 403))
+  }
+
+  next()
+})
+
+export const authorizeWorkoutHistory = catchAsync( async(req, res,next) => {
+  const workoutHistoryId = req.params?.workoutHistoryId
+
+  const history = await WorkoutHistory.findById(workoutHistoryId)
+
+  if (!history) {
+   return next(new AppError("No history found with that ID", 404))
+  }
+  if (history.owner.toString() !== req?.userId) {
+    return next(new AppError("You are not authorized to access this history", 403))
   }
 
   next()
