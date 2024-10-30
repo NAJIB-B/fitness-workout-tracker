@@ -47,7 +47,7 @@ export const createWorkout = catchAsync(async (req, res, next) => {
 
 export const getAllWorkout = catchAsync(async (req, res, next) => {
 
-  const workouts = await Workout.find({owner : req?.userId});
+  const workouts = await Workout.find({owner : req?.userId}).sort({scheduledDate: -1});
 
   workouts.map((workout) => {
     workout.status = getWorkoutStatus(workout)
@@ -130,7 +130,6 @@ export const completeAWorkout = catchAsync(async (req, res, next) => {
 
     const newDateInDateFormat = new Date(newDate)
     workout.scheduledDate = newDateInDateFormat
-    console.log(newDateInDateFormat)
   } else {
     workout.status = Status.completed
   }

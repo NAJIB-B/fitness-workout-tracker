@@ -13,6 +13,7 @@ interface IWorkoutHistory {
   updatedAt: string;
 }
 
+
 const workoutHistorySchema = new Schema<IWorkoutHistory>(
   {
     workout: {
@@ -39,6 +40,7 @@ workoutHistorySchema.virtual("comment", {
   foreignField: "workoutHistory",
   localField: "_id",
 });
+
 
 const WorkoutHistory = model<IWorkoutHistory>(
   "WorkoutHistory",
