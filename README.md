@@ -2,20 +2,40 @@
 <h1>Overview</h1>
 <img src="https://assets.roadmap.sh/guest/fitness-workout-tracker-82uux.png" alt="project architecture">
 
-<p>The Fitness Workout Tracker is a backend application designed to help users create, manage, and track their workout schedules. 
-  This project allows users to log exercises, provide feedback on their workouts, and view their workout history. 
-  The primary focus is on user-specific data storage and enhancing the workout experience with customizable features.</p>
-.</p>
+<p>The Fitness Workout Tracker is a robust backend application designed to help users manage their workout routines effectively. 
+  The application supports user sign-up and secure authentication via JWT, allowing users to create, schedule, and track their workouts seamlessly.</p>
 
+<h2>Key Features:</h2>
 
-<h3>Key Features</h3>
+<h3>User Authentication:</h3>
 <ul>
-    <li><strong>User Authentication</strong>: Implemented a secure user sign-up and log-in flow using JWT for authentication, ensuring a personalized experience for multiple users.</li>
-    <li><strong>Workout Management</strong>: Users can create workouts consisting of multiple exercises, track their progress, and update their workouts with personal comments.</li>
-    <li><strong>Date-Time Management</strong>: Each workout is associated with a specific date, allowing users to list active, pending and completed workouts sorted by date.</li>
-    <li><strong>Progress Reporting</strong>: Users can access reports of their past workouts, including the total number of completed workouts and total exercises performed.</li>
-    <li><strong>Custom Comments</strong>: Users can add a comment for each workout, detailing how they felt and any adjustments they might want to make in the future.</li>
+    <li>Implemented a secure user sign-up and log-in flow using JWT for authentication, ensuring a personalized experience for multiple users.</li>
 </ul>
+
+<h3>Workout Creation:</h3>
+<ul>
+    <li>Users can create workouts by selecting from a list of 30 predefined exercises or adding their own custom exercises.</li>
+    <li>Workouts can be scheduled for specific dates and set as one-time or recurring sessions.</li>
+</ul>
+
+<h3>Workout Management:</h3>
+<ul>
+    <li>Users can view all their workouts categorized by status: pending, active, missed, or completed.</li>
+    <li>Completed workouts can be marked as done, and recurring workouts will be automatically rescheduled for the following week.</li>
+</ul>
+
+<h3>Comments & History:</h3>
+<ul>
+    <li>After completing a workout, users can optionally add comments to reflect on their experience.</li>
+    <li>Users can access their workout history to review completed workouts and comments.</li>
+</ul>
+
+<h3>Progress Reports:</h3>
+<ul>
+    <li>Users can generate reports detailing their total completed workouts and exercises performed, aiding in tracking progress over time.</li>
+</ul>
+
+
 
 
 
